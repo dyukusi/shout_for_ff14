@@ -6,12 +6,12 @@
 		<div class="right">
 			<button class="button close">
 				{{#equal type "lobby"}}
-					Disconnect
+					切断
 				{{else}}
 					{{#equal type "query"}}
-						Close
+						閉じる
 					{{else}}
-						Leave
+						退出
 					{{/equal}}
 				{{/equal}}
 			</button>

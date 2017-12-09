@@ -207,14 +207,14 @@ $(function() {
 			"action",
 		].indexOf(type) !== -1) {
 			switch (type) {
-			case "invite": data.msg.formattedAction = "invited " + data.msg.target + " to"; break;
-			case "join": data.msg.formattedAction = "has joined the channel"; break;
+			case "invite": data.msg.formattedAction = "招待 " + data.msg.target; break;
+			case "join": data.msg.formattedAction = "が入室しました"; break;
 			case "mode": data.msg.formattedAction = "sets mode"; break;
-			case "kick": data.msg.formattedAction = "has kicked"; break;
-			case "nick": data.msg.formattedAction = "is now known as"; break;
-			case "part": data.msg.formattedAction = "has left the channel"; break;
-			case "quit": data.msg.formattedAction = "has quit"; break;
-			case "topic": data.msg.formattedAction = "has changed the topic to:"; break;
+			case "kick": data.msg.formattedAction = "が次元の狭間に飲み込まれました"; break;
+			case "nick": data.msg.formattedAction = "のニックネームは"; break;
+			case "part": data.msg.formattedAction = "が退出しました"; break;
+			case "quit": data.msg.formattedAction = "が切断しました"; break;
+			case "topic": data.msg.formattedAction = ": "; break;
 			default: data.msg.formattedAction = "";
 			}
 

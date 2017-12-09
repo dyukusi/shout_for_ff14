@@ -54,16 +54,16 @@ templates['chat'] = template({"1":function(depth0,helpers,partials,data) {
     + escapeExpression(((helpers.partial || (depth0 && depth0.partial) || helperMissing).call(depth0, "user", {"name":"partial","hash":{},"data":data})))
     + "\n		</div>\n	</aside>\n</div>\n";
 },"2":function(depth0,helpers,partials,data) {
-  return "					Disconnect\n";
+  return "					切断\n";
   },"4":function(depth0,helpers,partials,data) {
   var stack1, helperMissing=helpers.helperMissing, buffer = "";
   stack1 = ((helpers.equal || (depth0 && depth0.equal) || helperMissing).call(depth0, (depth0 != null ? depth0.type : depth0), "query", {"name":"equal","hash":{},"fn":this.program(5, data),"inverse":this.program(7, data),"data":data}));
   if (stack1 != null) { buffer += stack1; }
   return buffer;
 },"5":function(depth0,helpers,partials,data) {
-  return "						Close\n";
+  return "						閉じる\n";
   },"7":function(depth0,helpers,partials,data) {
-  return "						Leave\n";
+  return "						退出\n";
   },"9":function(depth0,helpers,partials,data) {
   return "show";
   },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {

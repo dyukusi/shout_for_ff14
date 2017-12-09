@@ -21,10 +21,10 @@ module.exports = function(irc, network) {
 			});
 		}
 		var prefix = {
-			hostname: "from",
-			realname: "is",
-			channels: "on",
-			server: "using"
+			hostname: "ホスト名: ",
+			realname: "実名: ",
+			channels: "チャンネル: ",
+			server: "サーバー: "
 		};
 		for (var k in data) {
 			var key = prefix[k];

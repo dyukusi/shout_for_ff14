@@ -154,7 +154,7 @@ Client.prototype.connect = function(args) {
 
 	var nick = args.nick || "shout-user";
 	var username = args.username || nick.replace(/[^a-zA-Z0-9]/g, "");
-	var realname = args.realname || "Shout User";
+	var realname = args.realname || "TempRealName"; // TODO: 実名の用途調査
 
 	var irc = slate(stream);
 	identd.hook(stream, username);
@@ -213,7 +213,7 @@ Client.prototype.connect = function(args) {
 	});
 
 	irc.once("pong", function() {
-		var join = (args.join || "");
+		var join = (args.join || "#home, #mana");
 		if (join) {
 			join = join.replace(/\,/g, " ").split(/\s+/g);
 			irc.join(join);

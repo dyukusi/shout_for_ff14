@@ -29,14 +29,14 @@
 			<div class="tse-content">
 				<div class="networks"></div>
 				<div class="empty">
-					You're not connected to any networks yet.
+					接続してください
 				</div>
 			</div>
 		</aside>
 		<footer id="footer">
 			<button class="icon sign-in" data-target="#sign-in" data-title="Sign in" data-placement="top" title="Sign in to Shout"></button>
-			<button class="icon connect" data-target="#connect" data-title="Connect" data-placement="top" title="Connect to network"></button>
-			<button class="icon settings" data-target="#settings" data-title="Settings" data-placement="top" title="Client settings"></button>
+			<button class="icon connect" data-target="#connect" data-title="Connect" data-placement="top" title="接続"></button>
+			<button class="icon settings" data-target="#settings" data-title="Settings" data-placement="top" title="設定"></button>
 			<button id="sign-out" class="icon sign-out" data-placement="top" title="Sign out"></button>
 		</footer>
 		<div id="main">
@@ -87,7 +87,7 @@
 					<form class="container" action="">
 						<div class="row">
 							<div class="col-sm-12">
-								<h1 class="title">Connect</h1>
+								<h1 class="title">FF14下限ILコミュニティ</h1>
 							</div>
 							<div <%= typeof(displayNetwork) !== "undefined" && !displayNetwork ? 'style="display: none;"' : ''%>>
 								<div class="col-sm-12">
@@ -135,30 +135,30 @@
 							<div class="col-sm-5">
 								<input class="input nick" name="nick" value="<%= defaults.nick %>">
 							</div>
-							<div class="clearfix"></div>
-							<div class="col-sm-3">
-								<label>Username</label>
-							</div>
-							<div class="col-sm-5">
-								<input class="input username" name="username" value="<%= defaults.username %>">
-							</div>
-							<div class="clearfix"></div>
-							<div class="col-sm-3">
-								<label>Real name</label>
-							</div>
-							<div class="col-sm-9">
-								<input class="input" name="realname" class="input" value="<%= defaults.realname %>">
-							</div>
-							<div class="col-sm-3">
-								<label>Channels</label>
-							</div>
-							<div class="col-sm-9">
-								<input class="input" name="join" class="input" value="<%= defaults.join %>">
-							</div>
+							<!--<div class="clearfix"></div>-->
+							<!--<div class="col-sm-3">-->
+								<!--<label>Username</label>-->
+							<!--</div>-->
+							<!--<div class="col-sm-5">-->
+								<!--<input class="input username" name="username" value="<%= defaults.username %>">-->
+							<!--</div>-->
+							<!--<div class="clearfix"></div>-->
+							<!--<div class="col-sm-3">-->
+								<!--<label>Real name</label>-->
+							<!--</div>-->
+							<!--<div class="col-sm-9">-->
+								<!--<input class="input" name="realname" class="input" value="<%= defaults.realname %>">-->
+							<!--</div>-->
+							<!--<div class="col-sm-3">-->
+								<!--<label>Channels</label>-->
+							<!--</div>-->
+							<!--<div class="col-sm-9">-->
+								<!--<input class="input" name="join" class="input" value="<%= defaults.join %>">-->
+							<!--</div>-->
 							<div class="col-sm-3 clearfix"></div>
 							<div class="col-sm-9">
 								<button type="submit" class="btn">
-									Connect
+									接続
 								</button>
 							</div>
 						</div>
@@ -171,109 +171,109 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-12">
-								<h1 class="title">Settings</h1>
+								<h1 class="title">設定</h1>
 							</div>
 							<div class="col-sm-12">
-								<h2>Messages</h2>
+								<h2>メッセージログ</h2>
 							</div>
 							<div class="col-sm-6">
 								<label class="opt">
 									<input type="checkbox" name="join">
-									Show joins
+									参加
 								</label>
 							</div>
-							<div class="col-sm-6">
-								<label class="opt">
-									<input type="checkbox" name="motd">
-									Show motd
-								</label>
-							</div>
+							<!--<div class="col-sm-6">-->
+								<!--<label class="opt">-->
+									<!--<input type="checkbox" name="motd">-->
+									<!--デイリーメッセージ-->
+								<!--</label>-->
+							<!--</div>-->
 							<div class="col-sm-6">
 								<label class="opt">
 									<input type="checkbox" name="part">
-									Show parts
+									退出
 								</label>
 							</div>
-							<div class="col-sm-6">
-								<label class="opt">
-									<input type="checkbox" name="nick">
-									Show nick changes
-								</label>
-							</div>
-							<div class="col-sm-6">
-								<label class="opt">
-									<input type="checkbox" name="mode">
-									Show mode
-								</label>
-							</div>
-							<div class="col-sm-6">
-								<label class="opt">
-									<input type="checkbox" name="quit">
-									Show quits
-								</label>
-							</div>
+							<!--<div class="col-sm-6">-->
+								<!--<label class="opt">-->
+									<!--<input type="checkbox" name="nick">-->
+									<!--Show nick changes-->
+								<!--</label>-->
+							<!--</div>-->
+							<!--<div class="col-sm-6">-->
+								<!--<label class="opt">-->
+									<!--<input type="checkbox" name="mode">-->
+									<!--Show mode-->
+								<!--</label>-->
+							<!--</div>-->
+							<!--<div class="col-sm-6">-->
+								<!--<label class="opt">-->
+									<!--<input type="checkbox" name="quit">-->
+									<!--Show quits-->
+								<!--</label>-->
+							<!--</div>-->
 							<div class="col-sm-12">
-								<h2>Visual Aids</h2>
+								<h2>表示</h2>
 							</div>
 							<div class="col-sm-12">
 								<label class="opt">
 									<input type="checkbox" name="colors">
-									Enable colored nicknames
+									ユーザ毎に名前の色を分ける
 								</label>
 							</div>
-							<% if (typeof prefetch === "undefined" || prefetch !== false) { %>
+							<!--<% if (typeof prefetch === "undefined" || prefetch !== false) { %>-->
+							<!--<div class="col-sm-12">-->
+								<!--<h2>Links and URLs</h2>-->
+							<!--</div>-->
+							<!--<div class="col-sm-6">-->
+								<!--<label class="opt">-->
+									<!--<input type="checkbox" name="thumbnails">-->
+									<!--Auto-expand thumbnails-->
+								<!--</label>-->
+							<!--</div>-->
+							<!--<div class="col-sm-6">-->
+								<!--<label class="opt">-->
+									<!--<input type="checkbox" name="links">-->
+									<!--Auto-expand links-->
+								<!--</label>-->
+							<!--</div>-->
+							<!--<% } %>-->
 							<div class="col-sm-12">
-								<h2>Links and URLs</h2>
-							</div>
-							<div class="col-sm-6">
-								<label class="opt">
-									<input type="checkbox" name="thumbnails">
-									Auto-expand thumbnails
-								</label>
-							</div>
-							<div class="col-sm-6">
-								<label class="opt">
-									<input type="checkbox" name="links">
-									Auto-expand links
-								</label>
-							</div>
-							<% } %>
-							<div class="col-sm-12">
-								<h2>Notifications</h2>
+								<h2>通知</h2>
 							</div>
 							<div class="col-sm-12">
 								<label class="opt">
 								<input id="badge" type="checkbox" name="badge">
-								Enable badge
+								バッジ
 								</label>
 							</div>
 							<div class="col-sm-12">
 								<label class="opt">
 								<input type="checkbox" name="notification">
-								Enable notification sound
+								通知音
 								</label>
 							</div>
 							<div class="col-sm-12">
 								<div class="opt">
-									<button id="play">Play sound</button>
+									<button id="play">Play</button>
 								</div>
 							</div>
 
 							<div class="col-sm-12">
 								<label class="opt">
 									<input type="checkbox" name="notifyAllMessages">
-									Enable notification for all messages
+									全てのメッセージを通知する
 								</label>
 							</div>
-							<div class="col-sm-12">
-								<h2>About Shout</h2>
-							</div>
-							<div class="col-sm-12">
-								<p class="about">
-									You're currently running version <small><%= version %></small><br>
-									<a href="https://raw.githubusercontent.com/erming/shout/master/CHANGELOG.md" target="_blank">Check for updates</a>
-								</p>
-							</div>
+							<!--<div class="col-sm-12">-->
+								<!--<h2>About Shout</h2>-->
+							<!--</div>-->
+							<!--<div class="col-sm-12">-->
+								<!--<p class="about">-->
+									<!--You're currently running version <small><%= version %></small><br>-->
+									<!--<a href="https://raw.githubusercontent.com/erming/shout/master/CHANGELOG.md" target="_blank">Check for updates</a>-->
+								<!--</p>-->
+							<!--</div>-->
 						</div>
 					</div>
 				</div>
@@ -281,7 +281,7 @@
 			<form id="form" action="">
 				<div class="inner">
 					<button id="submit" type="submit">
-						Send
+						送信
 					</button>
 					<div class="input">
 						<label for="input" id="nick"></label>

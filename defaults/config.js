@@ -40,7 +40,7 @@ module.exports = {
 	// @type     string
 	// @default  "themes/example.css"
 	//
-	theme: "themes/example.css",
+	theme: "themes/morning.css",
 
 	//
 	// Autoload users
@@ -84,7 +84,7 @@ module.exports = {
 	// @type     boolean
 	// @default  true
 	//
-	displayNetwork: true,
+	displayNetwork: false,
 
 	//
 	// Log settings
@@ -126,7 +126,7 @@ module.exports = {
 		// @type     string
 		// @default  "Freenode"
 		//
-		name: "Freenode",
+		name: "Limiters",
 
 		//
 		// Host
@@ -134,7 +134,7 @@ module.exports = {
 		// @type     string
 		// @default  "irc.freenode.org"
 		//
-		host: "irc.freenode.org",
+		host: "localhost",
 
 		//
 		// Port
@@ -166,7 +166,7 @@ module.exports = {
 		// @type     string
 		// @default  "shout-user"
 		//
-		nick: "shout-user",
+		nick: "guest",
 
 		//
 		// Username
@@ -174,7 +174,7 @@ module.exports = {
 		// @type     string
 		// @default  "shout-user"
 		//
-		username: "shout-user",
+		username: "guest",
 
 		//
 		// Real Name
@@ -182,7 +182,7 @@ module.exports = {
 		// @type     string
 		// @default  "Shout User"
 		//
-		realname: "Shout User",
+		realname: "Guest",
 
 		//
 		// Channels
@@ -190,7 +190,7 @@ module.exports = {
 		// @type     string
 		// @default  "#foo, #shout-irc"
 		//
-		join: "#foo, #shout-irc"
+		join: "#home, #mana"
 	},
 
 	//
