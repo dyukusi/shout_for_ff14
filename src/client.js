@@ -213,7 +213,7 @@ Client.prototype.connect = function(args) {
 	});
 
 	irc.once("pong", function() {
-		var join = (args.join || "#home, #mana");
+		var join = (args.join || "#mana-il-limit");
 		if (join) {
 			join = join.replace(/\,/g, " ").split(/\s+/g);
 			irc.join(join);

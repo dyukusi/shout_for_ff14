@@ -1,3 +1,4 @@
+// Users/xxx/.shout/config.js
 module.exports = {
 	//
 	// Set the server mode.
@@ -190,7 +191,7 @@ module.exports = {
 		// @type     string
 		// @default  "#foo, #shout-irc"
 		//
-		join: "#home, #mana"
+		join: "#mana-il-limit"
 	},
 
 	//
