@@ -127,7 +127,7 @@ module.exports = {
 		// @type     string
 		// @default  "Freenode"
 		//
-		name: "Limiters",
+		name: "FF14Community",
 
 		//
 		// Host
@@ -143,7 +143,7 @@ module.exports = {
 		// @type     int
 		// @default  6697
 		//
-		port: 6697,
+		port: 6667,
 
 		//
 		// Password
@@ -159,7 +159,7 @@ module.exports = {
 		// @type     boolean
 		// @default  true
 		//
-		tls: true,
+		tls: false,
 
 		//
 		// Nick
